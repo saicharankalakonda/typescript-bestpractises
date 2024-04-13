@@ -1,0 +1,25 @@
+immutability 
+-------------------------
+
+
+const add3 = arr => arr.concat(3)
+const myArr = [1,2]
+const result1 = add3(myArr)
+cosnt result2 = add3(myArr)
+
+
+we are achiving immutability with the help of concat function 
+
+
+
+currying 
+
+const add = (x,y) => x+ y
+
+const add = x => y => x + y 
+
+const add1 = add(1)
+
+
+add1(2)
+add1(3)
