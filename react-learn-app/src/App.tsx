@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TabPanel from './Companies/Paytm-09/TabPanel'
 
 
 
@@ -13,16 +14,11 @@ function App() {
 
   return (
     <>
-      <div>
-        
+      
+
+      <div style ={{marginBottom:'auto',marginRight:'10px'}}>
+      <TabPanel  />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
- 
     </>
   )
 }

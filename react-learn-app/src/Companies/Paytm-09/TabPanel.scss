@@ -1,0 +1,37 @@
+$breakpoints: (
+    "max-md": "767px",
+    "min-md": "768px"
+);
+
+.responsive-tabs {
+    padding: 0.5rem;
+
+.nav-tabs {
+        display: none;
+    }  
+
+  @media (min-width: map-get($breakpoints, "min-md")) {
+        .nav-tabs {
+            display: flex;
+        }
+    
+        .card {
+            border: none;
+    
+            .card-header {
+                display: none;
+            }
+    
+            .collapse {
+                display: block;
+            }
+        }
+    }
+    
+    @media (max-width: map-get($breakpoints, "max-md")) {
+        .tab-pane {
+            display: block !important;
+            opacity: 1;
+        }
+    }  
+}  
